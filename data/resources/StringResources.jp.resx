@@ -2384,7 +2384,7 @@ ActiveX/COMタブにてインストール済みCOMコンポーネントをブラ
     <value>EOLマーカを表示(&amp;E)</value>
   </data>
   <data name="Dialog.Options.IDEOptions.TextEditor.Markers.HighlightBracketCheckBox" xml:space="preserve">
-    <value>一致するかっこをハイライト(&M)</value>
+    <value>一致するかっこをハイライト(&amp;M)</value>
   </data>
   <data name="Dialog.Options.IDEOptions.TextEditor.Markers.HighlightCurrentLineCheckBox" xml:space="preserve">
     <value>現在行をハイライト</value>
