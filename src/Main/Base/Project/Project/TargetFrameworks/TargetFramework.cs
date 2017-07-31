@@ -35,11 +35,11 @@ namespace ICSharpCode.SharpDevelop.Project
 		public static readonly TargetFramework Net35Client = new DotNet35Client();
 		public static readonly TargetFramework Net40 = new DotNet4x(Versions.V4_0, RedistLists.Net40, DotnetDetection.IsDotnet40Installed);
 		public static readonly TargetFramework Net40Client = new DotNet4xClient(Versions.V4_0, RedistLists.Net40Client, DotnetDetection.IsDotnet40Installed);
-		public static readonly TargetFramework Net46 = new DotNet4x(Versions.V4_6, RedistLists.Net45, DotnetDetection.IsDotnet45Installed);
 		public static readonly TargetFramework Net45 = new DotNet4x(Versions.V4_5, RedistLists.Net45, DotnetDetection.IsDotnet45Installed);
 		public static readonly TargetFramework Net451 = new DotNet4x(Versions.V4_5_1, RedistLists.Net45, DotnetDetection.IsDotnet451Installed);
 		public static readonly TargetFramework Net452 = new DotNet4x(Versions.V4_5_2, RedistLists.Net45, DotnetDetection.IsDotnet452Installed);
-		
+		public static readonly TargetFramework Net46 = new DotNet4x(Versions.V4_6, RedistLists.Net46, DotnetDetection.IsDotnet46Installed);
+
 		/// <summary>
 		/// Retrieves a target framework by a 'name'.
 		/// Used by the .xpt project system; please do not use anywhere else.
