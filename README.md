@@ -16,7 +16,7 @@ If you want to contribute see ["Joining the team"](https://github.com/icsharpcod
 3. [Build Artefacts (Nightly Builds)](http://build.sharpdevelop.net/BuildArtefacts)
 
 ## How To Compile
- # Develop can be compiled using the supplied .bat files, or in #Develop itself.
+ #Develop can be compiled using the supplied .bat files, or in #Develop itself.
 
 ## System Requirements (running #Develop)
 
