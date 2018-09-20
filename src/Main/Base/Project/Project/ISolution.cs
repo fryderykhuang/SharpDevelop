@@ -30,7 +30,6 @@ namespace ICSharpCode.SharpDevelop.Project
 		VS2010 = 11,
 		VS2012 = 12,
 		VS2015 = 14,
-		VS2017 = 15,
 	}
 
 	/// <summary>
