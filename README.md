@@ -35,20 +35,20 @@ If you want to contribute see ["Joining the team"](https://github.com/icsharpcod
  - If you have cloned the SD git repository: git must be available on your PATH
  
 ## .Net supported
--2.0
--3.0
--3.5
--4.0
--4.5
--4.5.1
--4.5.2
--4.6
--4.6.1
--4.6.2
--4.7
--4.7.1
--4.7.2
--4.8 Early Access build(https://blogs.msdn.microsoft.com/dotnet/2018/09/17/announcing-net-framework-4-8-early-access-build-3646/)
+- 2.0
+- 3.0
+- 3.5
+- 4.0
+- 4.5
+- 4.5.1
+- 4.5.2
+- 4.6
+- 4.6.1
+- 4.6.2
+- 4.7
+- 4.7.1
+- 4.7.2
+- 4.8 Early Access build(https://blogs.msdn.microsoft.com/dotnet/2018/09/17/announcing-net-framework-4-8-early-access-build-3646/)
 
 ## Libraries and Integrated tools:
 
