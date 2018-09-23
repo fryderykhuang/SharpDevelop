@@ -130,13 +130,5 @@ namespace ICSharpCode.SharpDevelop
 				return key != null && key.GetValue("Install") as int? >= 1;
 			}
 		}
-
-		public static bool IsBuildTools2017Installed()
-		{
-			using (var key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\DevDiv\BuildTools\Servicing\15.0\MSBuild"))
-			{
-				return key != null && key.GetValue("Install") as int? >= 1;
-			}
-		}
 	}
 }
