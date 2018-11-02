@@ -1,5 +1,7 @@
 # #develop (short for SharpDevelop) 
 
+Can't create project on Windows 10.
+Don't working project save.
 ## Overview
 
  #develop is a free Integrated Development Environment
