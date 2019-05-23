@@ -1,7 +1,7 @@
 # #develop (short for SharpDevelop) 
+NuGet v5.0.2
+Minor bug fix
 
-Can't create project on Windows 10.
-Don't working project save.
 ## Overview
 
  #develop is a free Integrated Development Environment
