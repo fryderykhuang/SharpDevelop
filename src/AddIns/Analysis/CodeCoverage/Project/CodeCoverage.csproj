@@ -114,7 +114,9 @@
     <Compile Include="Src\CodeCoverageHighlighter.cs" />
     <Compile Include="Src\CodeCoverageOptions.cs" />
     <Compile Include="Src\CodeCoverageDisplayItem.cs" />
-    <Compile Include="Src\ColorPickerComboBox.cs" />
+    <Compile Include="Src\ColorPickerComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Src\CodeCoverageService.cs" />
     <Compile Include="Src\RunTestWithCodeCoverageCommand.cs" />
     <None Include="CodeCoverage.addin">

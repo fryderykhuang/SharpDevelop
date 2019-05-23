@@ -70,19 +70,19 @@ namespace ICSharpCode.SharpDevelop
 		public static bool IsDotnet46Installed()
 		{
 			// 393273 is .NET 4.6 on my Win7 machine installed
-			return GetDotnet4Release() >= 393273;
+			return GetDotnet4Release() >= 393295;
 		}
 		public static bool IsDotnet461Installed()
 		{
-			return GetDotnet4Release() >= 394271;
+			return GetDotnet4Release() >= 394254;
 		}
 		public static bool IsDotnet462Installed()
 		{
-			return GetDotnet4Release() >= 394806;
+			return GetDotnet4Release() >= 394802;
 		}
 		public static bool IsDotnet47Installed()
 		{
-			return GetDotnet4Release() >= 460805;
+			return GetDotnet4Release() >= 460798;
 		}
 		public static bool IsDotnet471Installed()
 		{
@@ -94,7 +94,7 @@ namespace ICSharpCode.SharpDevelop
 		}
 		public static bool IsDotnet48Installed()
 		{
-			return GetDotnet4Release() >= 527934;
+			return GetDotnet4Release() >= 528040;
 		}
 		/// <summary>
 		/// Gets the .NET 4.x release number.

@@ -82,7 +82,9 @@
     <Compile Include="Src\DesignerLoader\CodeDOMVerboseOutputGenerator.cs" />
     <Compile Include="Src\DesignerLoader\NRefactoryDesignerLoader.cs" />
     <Compile Include="Src\DesignerSourceCodeStorage.cs" />
-    <Compile Include="Src\Gui\ImageResourceEditorDialog.cs" />
+    <Compile Include="Src\Gui\ImageResourceEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Src\Gui\ImageResourceEditorDialog.Designer.cs">
       <DependentUpon>ImageResourceEditorDialog.cs</DependentUpon>
     </Compile>
