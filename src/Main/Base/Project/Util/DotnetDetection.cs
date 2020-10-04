@@ -28,8 +28,7 @@ namespace ICSharpCode.SharpDevelop
 		/// </summary>
 		public static bool IsDotnet35SP1Installed()
 		{
-			using (var key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5"))
-			{
+			using (var key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5")) {
 				return key != null && (key.GetValue("SP") as int?) >= 1;
 			}
 		}
@@ -41,7 +40,7 @@ namespace ICSharpCode.SharpDevelop
 		{
 			return true; // required for SD to run
 		}
-
+		
 		/// <summary>
 		/// Gets whether the .NET 4.5 runtime (or a later version of .NET 4.x) is installed.
 		/// </summary>
@@ -49,7 +48,7 @@ namespace ICSharpCode.SharpDevelop
 		{
 			return GetDotnet4Release() >= 378389;
 		}
-
+		
 		/// <summary>
 		/// Gets whether the .NET 4.5.1 runtime (or a later version of .NET 4.x) is installed.
 		/// </summary>
@@ -60,73 +59,50 @@ namespace ICSharpCode.SharpDevelop
 			// 378758 is .NET 4.5.1 on Win7
 			return GetDotnet4Release() >= 378675;
 		}
-
+		
 		public static bool IsDotnet452Installed()
 		{
 			// 379893 is .NET 4.5.2 on my Win7 machine
 			return GetDotnet4Release() >= 379893;
 		}
-
+		
 		public static bool IsDotnet46Installed()
 		{
-			// 393273 is .NET 4.6 on my Win7 machine installed
-			return GetDotnet4Release() >= 393295;
+			// 393273 is .NET 4.6 on my Win7 machine with VS 2015 RC installed
+			return GetDotnet4Release() >= 393273;
 		}
-		public static bool IsDotnet461Installed()
-		{
-			return GetDotnet4Release() >= 394254;
-		}
-		public static bool IsDotnet462Installed()
-		{
-			return GetDotnet4Release() >= 394802;
-		}
-		public static bool IsDotnet47Installed()
-		{
-			return GetDotnet4Release() >= 460798;
-		}
-		public static bool IsDotnet471Installed()
-		{
-			return GetDotnet4Release() >= 461308;
-		}
-		public static bool IsDotnet472Installed()
-		{
-			return GetDotnet4Release() >= 461808;
-		}
-		public static bool IsDotnet48Installed()
-		{
-			return GetDotnet4Release() >= 528040;
-		}
+		
 		/// <summary>
 		/// Gets the .NET 4.x release number.
 		/// The numbers are documented on http://msdn.microsoft.com/en-us/library/hh925568.aspx
 		/// </summary>
 		static int? GetDotnet4Release()
 		{
-			using (var key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full"))
-			{
+			using (var key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full")) {
 				if (key != null)
 					return key.GetValue("Release") as int?;
 			}
 			return null;
 		}
-
+		
 		/// <summary>
 		/// Gets whether the Microsoft Build Tools 2013 (MSBuild 12.0) is installed.
 		/// </summary>
 		public static bool IsBuildTools2013Installed()
 		{
 			// HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\BuildTools\Servicing\12.0
-			using (var key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\DevDiv\BuildTools\Servicing\12.0\MSBuild"))
-			{
+			using (var key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\DevDiv\BuildTools\Servicing\12.0\MSBuild")) {
 				return key != null && key.GetValue("Install") as int? >= 1;
 			}
 		}
-
+		
+		/// <summary>
+		/// Gets whether the Microsoft Build Tools 2015 (MSBuild 14.0) is installed.
+		/// </summary>
 		public static bool IsBuildTools2015Installed()
 		{
 			// HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\BuildTools\Servicing\14.0
-			using (var key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\DevDiv\BuildTools\Servicing\14.0\MSBuild"))
-			{
+			using (var key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\DevDiv\BuildTools\Servicing\14.0\MSBuild")) {
 				return key != null && key.GetValue("Install") as int? >= 1;
 			}
 		}

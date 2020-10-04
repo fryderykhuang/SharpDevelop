@@ -92,9 +92,7 @@
     </Compile>
     <Compile Include="Src\Gui\ProjectBrowserVisitor\OverlayIconManager.cs" />
     <Compile Include="Src\Gui\SvnGuiWrapper.cs" />
-    <Compile Include="Src\Gui\TortoiseSvnNotFoundForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Src\Gui\TortoiseSvnNotFoundForm.cs" />
     <Compile Include="Src\Commands\CheckoutCommands.cs" />
     <Compile Include="Src\SubversionStateCondition.cs" />
     <Compile Include="Src\SvnClientWrapper.cs" />

@@ -239,9 +239,7 @@
     <Compile Include="Src\MvcViewTypeViewModel.cs" />
     <Compile Include="Src\MvcVirtualPath.cs" />
     <Compile Include="Src\NullIISAdministrator.cs" />
-    <Compile Include="Src\ProcessMonitor.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Src\ProcessMonitor.cs" />
     <Compile Include="Src\SelectedFolderNodeInProjectsView.cs" />
     <Compile Include="Src\SelectedMvcControllerFolder.cs" />
     <Compile Include="Src\SelectedMvcFolder.cs" />
@@ -257,7 +255,25 @@
     <Compile Include="Src\WebProjectProperties.cs" />
     <Compile Include="Src\WebProjectService.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ItemTemplates" />
+    <Folder Include="ItemTemplates\CSharp\CodeTemplates" />
+    <Folder Include="ItemTemplates\CSharp" />
+    <Folder Include="ItemTemplates\CSharp\CodeTemplates\AddView" />
+    <Folder Include="ItemTemplates\CSharp\CodeTemplates\AddView\AspxCSharp" />
+    <Folder Include="ItemTemplates\CSharp\CodeTemplates\AddController" />
+    <Folder Include="ItemTemplates\CSharp\CodeTemplates\AddView\CSHTML" />
+    <Folder Include="ItemTemplates\VisualBasic" />
+    <Folder Include="ItemTemplates\VisualBasic\CodeTemplates" />
+    <Folder Include="ItemTemplates\VisualBasic\CodeTemplates\AddView" />
+    <Folder Include="ItemTemplates\VisualBasic\CodeTemplates\AddView\AspxVisualBasic" />
+    <Folder Include="ItemTemplates\VisualBasic\CodeTemplates\AddController" />
+    <Folder Include="ItemTemplates\VisualBasic\CodeTemplates\AddView\VBHTML" />
+    <Folder Include="Resources" />
+    <Folder Include="Src\Folding" />
+    <Folder Include="Src\Completion" />
+    <Folder Include="Src\WebProjectOptions" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\Libraries\AvalonEdit\ICSharpCode.AvalonEdit\ICSharpCode.AvalonEdit.csproj">
       <Project>{6C55B776-26D4-4DB3-A6AB-87E783B2F3D1}</Project>

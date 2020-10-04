@@ -55,9 +55,7 @@
     <Compile Include="IconPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PickFormatDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="PickFormatDialog.cs" />
     <Compile Include="PickFormatDialog.Designer.cs">
       <DependentUpon>PickFormatDialog.cs</DependentUpon>
     </Compile>

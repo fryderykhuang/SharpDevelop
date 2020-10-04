@@ -49,11 +49,9 @@
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>..\RequiredLibraries\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Web.XmlTransform, Version=2.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Microsoft.Web.Xdt.2.1.1\lib\net40\Microsoft.Web.XmlTransform.dll</HintPath>
-    </Reference>
-    <Reference Include="NuGet.Core, Version=2.14.0.832, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\NuGet.Core.2.14.0\lib\net40-Client\NuGet.Core.dll</HintPath>
+    <Reference Include="NuGet.Core">
+      <HintPath>..\..\PackageManagement\RequiredLibraries\NuGet.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -83,7 +81,6 @@
     <Resource Include="Resources\accept.png" />
     <Resource Include="Resources\exclamation.png" />
     <Resource Include="Resources\external_addin_small.png" />
-    <None Include="packages.config" />
     <None Include="Resources\license.txt" />
     <Resource Include="Resources\magnifier.png" />
     <Resource Include="Resources\packageicon.png" />
@@ -186,7 +183,14 @@
       <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Resources" />
+    <Folder Include="Src" />
+    <Folder Include="Src\Model" />
+    <Folder Include="Src\Model\Interfaces" />
+    <Folder Include="Src\ViewModel" />
+    <Folder Include="Src\View" />
+  </ItemGroup>
   <ItemGroup>
     <Page Include="Src\View\AddInManagerView.xaml" />
     <Page Include="Src\View\AddInsView.xaml" />
