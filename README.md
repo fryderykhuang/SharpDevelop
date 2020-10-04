@@ -1,6 +1,4 @@
 # #develop (short for SharpDevelop) 
-NuGet v5.0.2
-Minor bug fix
 
 ## Overview
 
@@ -24,7 +22,7 @@ Looking for the tech notes (Fine Art of Commenting, Coding Style Guide, and more
  - [Visual C++ 2008 SP1 Runtime](http://www.microsoft.com/downloads/details.aspx?familyid=A5C84275-3B97-4AB7-A40D-3802B2AF5FC2&displaylang=en)
 
 ## Extended Requirements (building #Develop)
-- [Microsoft Builx Tools 2015] (https://www.microsoft.com/en-us/download/details.aspx?id=48159)
+
  - [Microsoft Build Tools 2013](http://www.microsoft.com/en-us/download/details.aspx?id=40760)
  - [.NET 3.5 SP1](http://www.microsoft.com/en-au/download/details.aspx?id=22)
  - [.NET 4.5 SDK](http://msdn.microsoft.com/en-us/windows/desktop/hh852363.aspx) (part of Windows SDK 8.0)
@@ -33,22 +31,6 @@ Looking for the tech notes (Fine Art of Commenting, Coding Style Guide, and more
  - [Windows PowerShell](http://www.microsoft.com/en-us/download/details.aspx?id=34595)
  - If you have cloned the SD git repository: git must be available on your PATH
  
-## .Net supported
-- 2.0
-- 3.0
-- 3.5
-- 4.0
-- 4.5
-- 4.5.1
-- 4.5.2
-- 4.6
-- 4.6.1
-- 4.6.2
-- 4.7
-- 4.7.1
-- 4.7.2
-- 4.8 Early Access build(https://blogs.msdn.microsoft.com/dotnet/2018/09/17/announcing-net-framework-4-8-early-access-build-3646/)
-
 ## Libraries and Integrated tools:
 
 * [Avalon Dock](http://avalondock.codeplex.com/) : New BSD License (BSD) (thanks to **Adolfo Marinucci**)
