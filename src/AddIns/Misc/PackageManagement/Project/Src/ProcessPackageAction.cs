@@ -45,12 +45,7 @@ namespace ICSharpCode.PackageManagement
 		public bool AllowPrereleaseVersions { get; set; }
 		
 		public FrameworkName ProjectTargetFramework {
-			get {
-				if (Project != null) {
-					return Project.TargetFramework;
-				}
-				return null;
-			}
+			get { return Project.TargetFramework; }
 		}
 		
 		public virtual bool HasPackageScriptsToRun()

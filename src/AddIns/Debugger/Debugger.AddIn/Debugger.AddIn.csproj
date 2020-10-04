@@ -127,15 +127,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Options\DebuggingOptions.cs" />
     <Compile Include="Pads\BreakPointsPad.cs" />
-    <Compile Include="Pads\ConsolePad.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="Pads\ConsolePad.cs" />
     <Compile Include="Pads\LoadedModulesPad.cs" />
     <Compile Include="Pads\LocalVarPad.cs" />
     <Compile Include="Pads\ThreadsPad.cs" />
-    <Compile Include="Pads\WatchPad.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Pads\WatchPad.cs" />
     <Compile Include="Service\AttachToProcessForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -302,26 +298,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Breakpoints" />
-    <Folder Include="Tooltips" />
-    <Folder Include="Visualizers" />
-    <Folder Include="Visualizers\Commands" />
-    <Folder Include="Visualizers\Common" />
-    <Folder Include="Visualizers\GraphVisualizer" />
-    <Folder Include="Visualizers\GraphVisualizer\Presentation" />
-    <Folder Include="Visualizers\GraphVisualizer\ExpandedPaths" />
-    <Folder Include="Visualizers\GraphVisualizer\Layout" />
-    <Folder Include="Visualizers\GraphVisualizer\Layout\SplineRouting" />
-    <Folder Include="Visualizers\GraphVisualizer\Layout\SplineRouting\RouteGraph" />
-    <Folder Include="Visualizers\GraphVisualizer\Layout\SplineRouting\ShortestPath" />
-    <Folder Include="Visualizers\GraphVisualizer\Layout\Tree" />
-    <Folder Include="Visualizers\GraphVisualizer\Layout\TreeModel" />
-    <Folder Include="Visualizers\GraphVisualizer\ObjectGraph" />
-    <Folder Include="Visualizers\GraphVisualizer\ObjectGraph\TreeModel" />
-    <Folder Include="Visualizers\GridVisualizer" />
-    <Folder Include="Visualizers\Presentation" />
-    <Folder Include="Visualizers\TextVisualizer" />
-    <Folder Include="Visualizers\Utils" />
     <Page Include="Breakpoints\BreakpointEditorPopup.xaml" />
     <Page Include="Options\ChooseExceptionsDialog.xaml" />
     <Page Include="Options\DebuggingOptionsPanel.xaml" />
@@ -342,7 +318,6 @@
       <Name>ICSharpCode.Core.WinForms</Name>
       <Private>False</Private>
     </ProjectReference>
-    <Folder Include="NRefactory" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

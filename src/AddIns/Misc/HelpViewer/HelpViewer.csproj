@@ -67,7 +67,9 @@
     </Compile>
     <Compile Include="Configuration\AssemblyInfo.cs" />
     <Compile Include="Source\BrowserScheme.cs" />
-    <Compile Include="Source\Controls\HelpLibraryManagerNotFound.cs" />
+    <Compile Include="Source\Controls\HelpLibraryManagerNotFound.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Source\Controls\Pads.cs" />
     <Compile Include="Source\Controls\SearchPadControl.xaml.cs">
       <DependentUpon>SearchPadControl.xaml</DependentUpon>
@@ -95,12 +97,7 @@
     <Compile Include="Source\MSHelp3Provider.cs" />
     <Compile Include="Source\Core\NativeMethods.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Source" />
-    <Folder Include="Source\Core" />
-    <Folder Include="Source\Helper" />
-    <Folder Include="Source\Controls" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Page Include="Source\Controls\SearchPadControl.xaml" />
     <Page Include="Source\Controls\TocPadControl.xaml" />
