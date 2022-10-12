@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
     <ProjectGuid>{D781721F-C2A7-4E95-B76F-247170AC3B13}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -7,7 +7,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>ICSharpCode.AspNet.Mvc</RootNamespace>
     <AssemblyName>AspNet.Mvc</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <OutputPath>..\..\..\..\..\AddIns\BackendBindings\AspNet.Mvc\</OutputPath>
     <TargetFrameworkProfile />
@@ -58,11 +58,11 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xaml">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      
     </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>
@@ -239,7 +239,9 @@
     <Compile Include="Src\MvcViewTypeViewModel.cs" />
     <Compile Include="Src\MvcVirtualPath.cs" />
     <Compile Include="Src\NullIISAdministrator.cs" />
-    <Compile Include="Src\ProcessMonitor.cs" />
+    <Compile Include="Src\ProcessMonitor.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Src\SelectedFolderNodeInProjectsView.cs" />
     <Compile Include="Src\SelectedMvcControllerFolder.cs" />
     <Compile Include="Src\SelectedMvcFolder.cs" />
@@ -255,25 +257,7 @@
     <Compile Include="Src\WebProjectProperties.cs" />
     <Compile Include="Src\WebProjectService.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ItemTemplates" />
-    <Folder Include="ItemTemplates\CSharp\CodeTemplates" />
-    <Folder Include="ItemTemplates\CSharp" />
-    <Folder Include="ItemTemplates\CSharp\CodeTemplates\AddView" />
-    <Folder Include="ItemTemplates\CSharp\CodeTemplates\AddView\AspxCSharp" />
-    <Folder Include="ItemTemplates\CSharp\CodeTemplates\AddController" />
-    <Folder Include="ItemTemplates\CSharp\CodeTemplates\AddView\CSHTML" />
-    <Folder Include="ItemTemplates\VisualBasic" />
-    <Folder Include="ItemTemplates\VisualBasic\CodeTemplates" />
-    <Folder Include="ItemTemplates\VisualBasic\CodeTemplates\AddView" />
-    <Folder Include="ItemTemplates\VisualBasic\CodeTemplates\AddView\AspxVisualBasic" />
-    <Folder Include="ItemTemplates\VisualBasic\CodeTemplates\AddController" />
-    <Folder Include="ItemTemplates\VisualBasic\CodeTemplates\AddView\VBHTML" />
-    <Folder Include="Resources" />
-    <Folder Include="Src\Folding" />
-    <Folder Include="Src\Completion" />
-    <Folder Include="Src\WebProjectOptions" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\Libraries\AvalonEdit\ICSharpCode.AvalonEdit\ICSharpCode.AvalonEdit.csproj">
       <Project>{6C55B776-26D4-4DB3-A6AB-87E783B2F3D1}</Project>

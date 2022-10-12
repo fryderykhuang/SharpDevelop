@@ -44,7 +44,7 @@ namespace ICSharpCode.Decompiler.FlowAnalysis
 		
 		public SsaVariable(VariableDefinition v)
 		{
-			this.Name = string.IsNullOrEmpty(v.Name) ? "V_" + v.Index : v.Name;
+			this.Name = string.IsNullOrEmpty(v.VariableType.Name) ? "V_" + v.Index : v.VariableType.Name;
 			this.Variable = v;
 		}
 		

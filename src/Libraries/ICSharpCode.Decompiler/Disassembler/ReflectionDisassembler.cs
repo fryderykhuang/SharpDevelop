@@ -856,7 +856,7 @@ namespace ICSharpCode.Decompiler.Disassembler
 						output.Write("implements ");
 					else
 						output.Write("           ");
-					type.Interfaces[index].WriteTo(output, ILNameSyntax.TypeName);
+					type.Interfaces[index].InterfaceType.WriteTo(output, ILNameSyntax.TypeName);
 				}
 				output.WriteLine();
 				output.Unindent();
@@ -940,7 +940,7 @@ namespace ICSharpCode.Decompiler.Disassembler
 						for (int j = 0; j < gp.Constraints.Count; j++) {
 							if (j > 0)
 								output.Write(", ");
-							gp.Constraints[j].WriteTo(output, ILNameSyntax.TypeName);
+							gp.Constraints[j].ConstraintType.WriteTo(output, ILNameSyntax.TypeName);
 						}
 						output.Write(") ");
 					}

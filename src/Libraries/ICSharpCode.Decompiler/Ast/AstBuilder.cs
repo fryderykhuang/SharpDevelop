@@ -361,7 +361,7 @@ namespace ICSharpCode.Decompiler.Ast
 					astType.AddChild(ConvertType(typeDef.BaseType), Roles.BaseType);
 				}
 				foreach (var i in typeDef.Interfaces)
-					astType.AddChild(ConvertType(i), Roles.BaseType);
+					astType.AddChild(ConvertType(i.InterfaceType), Roles.BaseType);
 				
 				AddTypeMembers(astType, typeDef);
 
@@ -842,9 +842,9 @@ namespace ICSharpCode.Decompiler.Ast
 					c.BaseTypes.Add(new PrimitiveType("struct"));
 				
 				foreach (var constraintType in gp.Constraints) {
-					if (gp.HasNotNullableValueTypeConstraint && constraintType.FullName == "System.ValueType")
+					if (gp.HasNotNullableValueTypeConstraint && constraintType.ConstraintType.FullName == "System.ValueType")
 						continue;
-					c.BaseTypes.Add(ConvertType(constraintType));
+					c.BaseTypes.Add(ConvertType(constraintType.ConstraintType));
 				}
 				
 				if (gp.HasDefaultConstructorConstraint && !gp.HasNotNullableValueTypeConstraint)

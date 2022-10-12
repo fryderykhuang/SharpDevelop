@@ -128,6 +128,10 @@ namespace ICSharpCode.ILSpyAddIn
 			{
 				return Resolve(new DomAssemblyName(fullName), parameters);
 			}
+
+			public void Dispose()
+			{
+			}
 		}
 		
 		public static ILSpyFullParseInformation DecompileType(DecompiledTypeReference name, CancellationToken cancellationToken = default(CancellationToken))

@@ -26,6 +26,7 @@ using ICSharpCode.NRefactory.Ast;
 using ICSharpCode.NRefactory.Parser.CSharp;
 using ICSharpCode.NRefactory.PrettyPrinter;
 using System.Reflection;
+using ICSharpCode.NRefactory.CSharp;
 
 namespace ComExtensionMethodGenerator
 {
@@ -119,8 +120,8 @@ namespace ComExtensionMethodGenerator
 					foreach(MethodDeclaration method in type.Children.OfType<MethodDeclaration>()) {
 						MethodDeclaration extensionMethod = new MethodDeclaration();
 						// Signature
-						extensionMethod.Modifier = Modifiers.Public | Modifiers.Static;
-						extensionMethod.TypeReference = method.TypeReference;
+						extensionMethod.Modifiers = Modifiers.Public | Modifiers.Static;
+						extensionMethod.NodeType = method.NodeType;
 						extensionMethod.IsExtensionMethod = true;
 						if (string.IsNullOrEmpty(MethodPrefix)) {
 							extensionMethod.Name = method.Name;

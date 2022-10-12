@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
     <ProjectGuid>{0502FCF7-72F4-4587-936B-D0238CD0E072}</ProjectGuid>
     <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -15,7 +15,7 @@
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <WarningLevel>4</WarningLevel>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <OutputPath>..\..\..\..\..\AddIns\Misc\SharpDevelopReporting\</OutputPath>
   </PropertyGroup>
@@ -43,60 +43,41 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      
     </Reference>
     <Reference Include="PresentationCore">
-      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+      
     </Reference>
     <Reference Include="PresentationFramework">
-      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+      
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      
     </Reference>
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xaml">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      
     </Reference>
     <Reference Include="WindowsBase">
-      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+      
     </Reference>
     <Reference Include="Xceed.Wpf.Toolkit">
       <HintPath>..\..\..\..\Libraries\WPFExtendedToolkit\Xceed.Wpf.Toolkit.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Configuration" />
-    <Folder Include="src" />
-    <Folder Include="src\DesignerBinding" />
-    <Folder Include="src\Commands" />
-    <Folder Include="src\Designer" />
-    <Folder Include="src\Globals" />
-    <Folder Include="src\DesignableItems" />
-    <Folder Include="src\Factory" />
-    <Folder Include="src\Dialogs" />
-    <Folder Include="src\ReportWizard\Dialog" />
-    <Folder Include="src\ReportWizard\ViewModels" />
-    <Folder Include="src\UndoRedo" />
-    <Folder Include="src\ReportWizard" />
-    <Folder Include="src\Toolbox" />
-    <Folder Include="src\TypeProvider" />
-    <Folder Include="src\XML" />
-    <Folder Include="src\Services" />
-    <Folder Include="src\Views" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Compile Include="..\..\..\..\Main\GlobalAssemblyInfo.cs">
       <Link>Configuration\GlobalAssemblyInfo.cs</Link>
@@ -105,17 +86,39 @@
     <Compile Include="src\Commands\DesignerVerbSubmenuBuilder.cs" />
     <Compile Include="src\Commands\FormsCommands.cs" />
     <Compile Include="src\Commands\ViewCommands.cs" />
-    <Compile Include="src\DesignableItems\AbstractGraphicItem.cs" />
-    <Compile Include="src\DesignableItems\AbstractItem.cs" />
-    <Compile Include="src\DesignableItems\BaseCircleItem.cs" />
-    <Compile Include="src\DesignableItems\BaseGroupHeader.cs" />
-    <Compile Include="src\DesignableItems\BaseImageItem.cs" />
-    <Compile Include="src\DesignableItems\BaseLineItem.cs" />
-    <Compile Include="src\DesignableItems\BaseRectangleItem.cs" />
-    <Compile Include="src\DesignableItems\BaseRowItem.cs" />
-    <Compile Include="src\DesignableItems\BaseSection.cs" />
-    <Compile Include="src\DesignableItems\BaseTextItem.cs" />
-    <Compile Include="src\DesignableItems\BaseDataItem.cs" />
+    <Compile Include="src\DesignableItems\AbstractGraphicItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\DesignableItems\AbstractItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\DesignableItems\BaseCircleItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\DesignableItems\BaseGroupHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\DesignableItems\BaseImageItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\DesignableItems\BaseLineItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\DesignableItems\BaseRectangleItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\DesignableItems\BaseRowItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\DesignableItems\BaseSection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\DesignableItems\BaseTextItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\DesignableItems\BaseDataItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="src\DesignableItems\Group_SortColumns.cs" />
     <Compile Include="src\DesignableItems\ReportSettings.cs" />
     <Compile Include="src\DesignerBinding\DesignerBinding.cs" />
@@ -132,12 +135,16 @@
     <Compile Include="src\Designer\ContainerDesigner.cs" />
     <Compile Include="src\Designer\ReportRootDesigner.cs" />
     <Compile Include="src\Designer\ReportSettingsDesigner.cs" />
-    <Compile Include="src\Designer\RootReportModel.cs" />
+    <Compile Include="src\Designer\RootReportModel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="src\Designer\SectionDesigner.cs" />
     <Compile Include="src\Designer\TextItemDesigner.cs" />
     <Compile Include="src\Dialogs\DataTypeStringConverter.cs" />
     <Compile Include="src\Dialogs\DefaultTextEditor.cs" />
-    <Compile Include="src\Dialogs\EditorDialog.cs" />
+    <Compile Include="src\Dialogs\EditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="src\Dialogs\EditorDialog.Designer.cs">
       <DependentUpon>EditorDialog.cs</DependentUpon>
     </Compile>

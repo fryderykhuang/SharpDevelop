@@ -36,7 +36,7 @@ namespace ICSharpCode.NRefactory.ConsistencyCheck
 	{
 		public readonly List<CSharpProject> Projects = new List<CSharpProject>();
 		
-		public Solution(ICSharpCode.SharpDevelop.Project.Solution solution)
+		public Solution(ISolution solution)
 		{
 			foreach (var p in solution.Projects.OfType<MSBuildBasedProject>()) {
 				if (p.FileName.ToString().EndsWith(".csproj", StringComparison.OrdinalIgnoreCase))

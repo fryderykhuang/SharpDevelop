@@ -7,8 +7,7 @@
                  xmlns:sdwb="clr-namespace:ICSharpCode.SharpDevelop.Workbench;assembly=ICSharpCode.SharpDevelop"
                  xmlns:wb="clr-namespace:ICSharpCode.SharpDevelop.Workbench"
                  xmlns:widgets="http://icsharpcode.net/sharpdevelop/widgets"
-                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                 xmlns:local="clr-namespace:ICSharpCode.SharpDevelop.Gui.OptionPanels">
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 	<StackPanel>
 		<GroupBox Header="{core:Localize Dialog.Options.IDEOptions.LoadSaveOptions.LoadLabel}">
 			<widgets:StackPanelWithSpacing SpaceBetweenItems="5">
